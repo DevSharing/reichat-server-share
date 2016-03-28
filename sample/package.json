@@ -1,0 +1,19 @@
+{
+  "name": "sample",
+  "version": "0.1.0",
+  "description": "reichat server sample",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "reichat",
+    "server"
+  ],
+  "author": "ThanhDD <thanh.dangdinh@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "opts": "^1.2.2"
+  }
+}
