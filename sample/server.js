@@ -106,12 +106,21 @@ config.title = opts.get('title') || config.title || process.env.TITLE || 'PaintC
 
 config.canvasWidth = parseInt(opts.get('canvas-width') || config.canvasWidth || process.env.CANVAS_WIDTH || 1920, 10);
 config.canvasHeight = parseInt(opts.get('canvas-height') || config.canvasHeight || process.env.CANVAS_HEIGHT || 1080, 10);
+
 config.redisHost = opts.get('redis-host') || config.redisHost || process.env.REDIS_HOST || '';
 config.redisPort = parseInt(opts.get('redis-port') || config.redisPort || process.env.REDIS_PORT || 6379, 10);
 config.redisPassword = opts.get('redis-password') || config.redisPassword || process.env.REDIS_PASSWORD || '';
 config.redisKeyPrefix = opts.get('redis-key-prefix') || config.redisKeyPrefix || process.env.REDIS_KEY_PREFIX || '';
-config.dataDir = opts.get('data-dir') || config.dataDir || process.env.DATA_DIR || require('os').tmpdir();
-//config.dataDir = "./data";
+
+// config.redisHost = 'localhost';
+// config.redisPort = 6379;
+// config.redisPassword = '';
+// config.redisKeyPrefix = opts.get('redis-key-prefix') || config.redisKeyPrefix || process.env.REDIS_KEY_PREFIX || 'reichat';
+
+//config.dataDir = opts.get('data-dir') || config.dataDir || process.env.DATA_DIR || require('os').tmpdir();
+//config.dataDir = "/Users/thanhdd/Documents/nodejs/reichat-server-share/sample/data";
+
+config.dataDir = "./data";
 config.dataFilePrefix = opts.get('data-file-prefix') || config.dataFilePrefix || process.env.DATA_FILE_PREFIX || 'reichat_';
 config.maxPaintLogCount = parseInt(opts.get('max-paint-log-count') || config.maxPaintLogCount || process.env.MAX_PAINT_LOG_COUNT || 2000, 10);
 config.maxChatLogCount = parseInt(opts.get('max-chat-log-count') || config.maxChatLogCount || process.env.MAX_CHAT_LOG_COUNT || 100, 10);
