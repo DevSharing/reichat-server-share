@@ -1,6 +1,6 @@
 {
   "name": "reichat-server-share",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "reichat-server share",
   "main": "./lib/index.js",
   "scripts": {
